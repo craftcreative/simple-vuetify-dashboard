@@ -7,296 +7,202 @@
         <v-col cols="12" sm="12" md="12"
         style="background-color:#110F1B;">
         <!-- NAV BAR - Component -->
-      <div v-if="this.$vuetify.breakpoint.md || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.xl">
-        <v-row align="center">
-        <v-col cols="9" sm="9" md="11">
-        <v-img
-        height="45"
-        width="31"
-        src="@/assets/image/logoSyncc.svg"
-        ></v-img>
-      </v-col>
-      <v-col align="right" cols="3" sm="3" md="1">
-        <v-img
-        class="float-left"
-        height="16"
-        width="16"
-        @click="goToInstagram()"
-        src="@/assets/image/instagramIcon.svg"
-        ></v-img>
-        <v-img
-        v-if="mute"
-        class="mr-1"
-        align="right"
-        @click="muteVideo()"
-        height="16"
-        width="19"
-        src="@/assets/image/muteIconTrue.svg"
-        ></v-img>
-        <v-img
-        v-else
-        align="right"
-        class="mr-1"
-        @click="muteVideo()"
-        height="16"
-        width="19"
-        src="@/assets/image/muteIcon.svg"
-        ></v-img>
-      </v-col>
-    </v-row>
-      </div>
-      <div style="padding-left:25px; padding-right:25px;" v-else>
-        <v-row align="center">
-        <v-col cols="8" sm="8">
-        <v-img
-        height="45"
-        width="31"
-        src="@/assets/image/logoSyncc.svg"
-        ></v-img>
-      </v-col>
-      <v-col align="right" cols="4" sm="4">
-        <v-img
-        class="float-left"
-        height="16"
-        width="16"
-        @click="goToInstagram()"
-        src="@/assets/image/instagramIcon.svg"
-        ></v-img>
-        <v-img
-        v-if="mute"
-        class="mr-1"
-        align="right"
-        @click="muteVideo()"
-        height="16"
-        width="19"
-        src="@/assets/image/muteIconTrue.svg"
-        ></v-img>
-        <v-img
-        v-else
-        align="right"
-        class="mr-1"
-        @click="muteVideo()"
-        height="16"
-        width="19"
-        src="@/assets/image/muteIcon.svg"
-        ></v-img>
-      </v-col>
-    </v-row>
-      </div>
+        <div v-if="this.$vuetify.breakpoint.md || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.xl">
+          <v-row align="center">
+            <v-col cols="9" sm="9" md="11">
+              <v-img
+              height="45"
+              width="31"
+              src="@/assets/image/logoSyncc.svg"
+              ></v-img>
+            </v-col>
+            <v-col align="right" cols="3" sm="3" md="1">
+              <v-img
+              class="float-left"
+              height="16"
+              width="16"
+              @click="goToInstagram()"
+              src="@/assets/image/instagramIcon.svg"
+              ></v-img>
+              <v-img
+              v-if="mute"
+              class="mr-1"
+              align="right"
+              @click="muteVideo()"
+              height="16"
+              width="19"
+              src="@/assets/image/muteIconTrue.svg"
+              ></v-img>
+              <v-img
+              v-else
+              align="right"
+              class="mr-1"
+              @click="muteVideo()"
+              height="16"
+              width="19"
+              src="@/assets/image/muteIcon.svg"
+              ></v-img>
+            </v-col>
+          </v-row>
+        </div>
+        <div style="padding-left:25px; padding-right:25px;" v-else>
+          <v-row align="center">
+            <v-col cols="8" sm="10">
+              <v-img
+              height="45"
+              width="31"
+              src="@/assets/image/logoSyncc.svg"
+              ></v-img>
+            </v-col>
+            <v-col align="right" cols="4" sm="2">
+              <v-img
+              class="float-left"
+              height="16"
+              width="16"
+              @click="goToInstagram()"
+              src="@/assets/image/instagramIcon.svg"
+              ></v-img>
+              <v-img
+              v-if="mute"
+              class="mr-1"
+              align="right"
+              @click="muteVideo()"
+              height="16"
+              width="19"
+              src="@/assets/image/muteIconTrue.svg"
+              ></v-img>
+              <v-img
+              v-else
+              align="right"
+              class="mr-1"
+              @click="muteVideo()"
+              height="16"
+              width="19"
+              src="@/assets/image/muteIcon.svg"
+              ></v-img>
+            </v-col>
+          </v-row>
+        </div>
 
-    <!-- NAV BAR -->
+        <!-- NAV BAR -->
 
-    <!-- SECTION - 1 - Download -->
-    <v-row class="mt-14 mb-md-8 mb-sm-0 px-2">
-      <v-col cols="12" sm="12" md="8">
-      <!-- Text -->
-      <div v-if="this.$vuetify.breakpoint.md || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.xl">
-        <p style="font-size: 40pt; font-style: normal; color:#FA5257">{{"Syncc with music."}}</p>
-        <p class="mt-n10" style="font-size: 40pt; font-style: normal">{{"Download the app."}}</p>
-      </div>
-      <div style="padding-left:40px;" v-else-if="this.$vuetify.breakpoint.sm">
-        <p style="font-size: 30pt; font-style: normal; color:#FA5257">{{"Syncc with music."}}</p>
-        <p class="mt-n7" style="font-size: 30pt; font-style: normal">{{"Download the app."}}</p>
-      </div>
-      <div style="padding-left:25px;" v-else>
-        <p style="font-size: 27pt; font-style: normal; color:#FA5257">{{"Syncc with music."}}</p>
-        <p class="mt-n7" style="font-size: 27pt; font-style: normal">{{"Download the app."}}</p>
-      </div>
-    </v-col>
-    <v-col align="right" cols="12" sm="12" md="4">
-      <!-- Text -->
-      <div v-if="this.$vuetify.breakpoint.md || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.xl">
-        <v-btn
+        <!-- SECTION - 1 - Download -->
+        <v-row class="mt-10 mb-md-8 mb-sm-0 px-2">
+          <v-col cols="12" sm="12" md="8">
+            <!-- Text -->
+            <div v-if="this.$vuetify.breakpoint.md || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.xl">
+              <p style="font-size: 40pt; font-style: normal; color:#FA5257">{{"Syncc with music."}}</p>
+              <p class="mt-n10" style="font-size: 40pt; font-style: normal">{{"Download the app."}}</p>
+            </div>
+            <div style="padding-left:40px;" v-else-if="this.$vuetify.breakpoint.sm">
+              <p style="font-size: 30pt; font-style: normal; color:#FA5257">{{"Syncc with music."}}</p>
+              <p class="mt-n7" style="font-size: 30pt; font-style: normal">{{"Download the app."}}</p>
+            </div>
+            <div style="padding-left:25px;" v-else>
+              <p style="font-size: 27pt; font-style: normal; color:#FA5257">{{"Syncc with music."}}</p>
+              <p class="mt-n7" style="font-size: 27pt; font-style: normal">{{"Download the app."}}</p>
+            </div>
+          </v-col>
+          <v-col align="right" cols="12" sm="12" md="4">
+            <!-- Text -->
+            <div v-if="this.$vuetify.breakpoint.md || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.xl">
+              <v-btn
+              @click="goToAppStore()"
+              style="width:291px; font-family:syncc-medium; letter-spacing:0; text-transform: none; font-size:12pt"
+              class="ma-2 py-7 justify-space-between"
+              color="secondary" large > Download on iOS
+              <v-icon class="mr-6" dark right >{{apple}}</v-icon>
+            </v-btn> <br />
+            <v-btn
+            style="width:291px; font-family:syncc-medium; letter-spacing:0; text-transform: none; font-size:12pt"
+            @click="goToAndroidStore()"
+            class="ma-2 py-7 justify-space-between"
+            color="secondary"
+            large>Download on Android
+            <v-icon class="mr-6" dark right>{{android}}</v-icon>
+          </v-btn>
+        </div>
+        <div v-else class="">
+          <v-btn v-if="os == 'Android' "
+          style=" font-family:syncc-medium; width:100%; height:76px; letter-spacing:0; text-transform: none; font-size:12pt"
+          color="secondary"
+          @click="goToAndroidStore()"
+          class="justify-space-between"
+          tile
+          large><span class="pl-3">Download on Android</span>
+          <v-icon class="mr-6" dark right>{{android}}</v-icon>
+        </v-btn>
+        <v-btn v-else-if="os == 'iOS' "
         @click="goToAppStore()"
-        style="width:291px; font-family:syncc-medium; letter-spacing:0; text-transform: none; font-size:12pt"
-        class="ma-2 py-7 justify-space-between"
-        color="secondary" large > Download on iOS
-        <v-icon class="mr-6" dark right >{{apple}}</v-icon>
-      </v-btn> <br />
+        style=" font-family:syncc-medium;width:100%;height:76px; letter-spacing:0; text-transform: none; font-size:12pt"
+        color="secondary"
+        class="justify-space-between"
+        tile
+        large><span class="pl-3"> Download on iOS</span>
+        <v-icon class="mr-6" dark right>{{apple}}</v-icon>
+      </v-btn>
+      <div v-else >
+        <v-btn
+        style=" font-family:syncc-medium; width:100%; height:76px; letter-spacing:0;  text-transform: none; font-size:12pt"
+        color="secondary"
+        class="justify-space-between"
+        @click="goToAppStore()"
+        tile
+        large>
+        <span class="text-left pl-4"> Download on iOS</span>
+        <v-icon class="mr-6 " align-end dark right>{{apple}}</v-icon>
+      </v-btn><br />
       <v-btn
-      style="width:291px; font-family:syncc-medium; letter-spacing:0; text-transform: none; font-size:12pt"
-      @click="goToAndroidStore()"
-      class="ma-2 py-7 justify-space-between"
+      style=" font-family:syncc-medium;width:100%; height:76px; letter-spacing:0; text-transform: none; font-size:12pt"
       color="secondary"
-      large>Download on Android
-      <v-icon class="mr-6" dark right>{{android}}</v-icon>
+      class="mt-3 justify-space-between"
+      @click="goToAndroidStore()"
+      tile
+      large><span class="text-left pl-4">Download on Android</span>
+      <v-icon class="mr-6 text-right" dark right>{{android}}</v-icon>
     </v-btn>
   </div>
-  <div v-else class="">
-    <v-btn v-if="os == 'Android' "
-    style=" font-family:syncc-medium; width:100%; height:76px; letter-spacing:0; text-transform: none; font-size:12pt"
-    color="secondary"
-    @click="goToAndroidStore()"
-    class="justify-space-between"
-    tile
-    large><span class="pl-3">Download on Android</span>
-    <v-icon class="pr-3" dark right>{{android}}</v-icon>
-  </v-btn>
-  <v-btn v-else-if="os == 'iOS' "
-  @click="goToAppStore()"
-  style=" font-family:syncc-medium;width:100%;height:76px; letter-spacing:0; text-transform: none; font-size:12pt"
-  color="secondary"
-  class="justify-space-between"
-  tile
-  large><span class="pl-3"> Download on iOS</span>
-  <v-icon class="pl-3" dark right>{{apple}}</v-icon>
-</v-btn>
-<div v-else >
-  <v-btn
-  style=" font-family:syncc-medium; width:100%; height:76px; letter-spacing:0;  text-transform: none; font-size:12pt"
-  color="secondary"
-  class="justify-space-between"
-  @click="goToAppStore()"
-  tile
-  large>
-  <span class="text-left pl-4"> Download on iOS</span>
-  <v-icon class="mr-6 " align-end dark right>{{apple}}</v-icon>
-</v-btn><br />
-<v-btn
-style=" font-family:syncc-medium;width:100%; height:76px; letter-spacing:0; text-transform: none; font-size:12pt"
-color="secondary"
-class="mt-3 justify-space-between"
-@click="goToAndroidStore()"
-tile
-large><span class="text-left pl-4">Download on Android</span>
-<v-icon class="mr-6 text-right" dark right>{{android}}</v-icon>
-</v-btn>
-</div>
 </div>
 
 </v-col>
 </v-row>
 <!-- SECTION - 1 - Download -->
 <!-- SECTION - 2 - Video -->
-<div v-if="unSuportedVideo.includes(os)">
-  <!-- XL   :src="require(`@/assets/video/synccLargeVideo.webm`)" -->
-  <div v-if="this.$vuetify.breakpoint.xl">
-    <video-background
-    :src="require(`@/assets/video/largeVideo.mp4`)"
-    objectFit
-    style="height:1380px"
-    :muted="mute"
-    ref="videobackground"
-    >
-  </video-background>
-</div>
-<!-- LG   :src="require(`@/assets/video/synccLargeVideo.webm`)" -->
-<div v-else-if="this.$vuetify.breakpoint.lg">
-  <video-background
-  :src="require(`@/assets/video/largeVideo.mp4`)"
-  style="height:800px"
-  :muted="mute"
-  ref="videobackground"
-  >
-</video-background>
-</div>
-<!-- MD   :src="require(`@/assets/video/synccLargeVideo.webm`)"-->
-<div v-else-if="this.$vuetify.breakpoint.md">
-  <video-background
-  :src="require(`@/assets/video/largeVideo.mp4`)"
-  style="height:620px"
-  :muted="mute"
-  ref="videobackground"
-  >
-</video-background>
-</div>
-<!-- SM   :src="require(`@/assets/video/synccSmallVideo.webm`)"-->
-<div v-else-if="this.$vuetify.breakpoint.sm">
-  <video-background
-  :src="require(`@/assets/video/smallVideo.mp4`)"
-  style="height:700px"
-  :muted="mute"
-  ref="videobackground"
-  >
-</video-background>
-</div>
-<!-- COLS -->
-<div v-else>
-  <video-background
-  :src="require(`@/assets/video/smallVideo.mp4`)"
-  style="height:400px"
-  :muted="mute"
-  ref="videobackground"
-  >
-</video-background>
-</div>
-</div>
-<div  v-else>
-  <!-- XL    -->
-  <div v-if="this.$vuetify.breakpoint.xl">
-    <video-background
-    :src="require(`@/assets/video/synccLargeVideo.webm`)"
-    objectFit
-    style="height:1380px"
-    :muted="mute"
-    ref="videobackground"
-    >
-  </video-background>
-</div>
-<!-- LG   :src="require(`@/assets/video/synccLargeVideo.webm`)" -->
-<div v-else-if="this.$vuetify.breakpoint.lg">
-  <video-background
-  :src="require(`@/assets/video/synccLargeVideo.webm`)"
-  style="height:800px"
-  :muted="mute"
-  ref="videobackground"
-  >
-</video-background>
-</div>
-<!-- MD   :src="require(`@/assets/video/synccLargeVideo.webm`)"-->
-<div v-else-if="this.$vuetify.breakpoint.md">
-  <video-background
-  :src="require(`@/assets/video/synccLargeVideo.webm`)"
-  style="height:620px"
-  :muted="mute"
-  ref="videobackground"
-  >
-</video-background>
-</div>
-<!-- SM   :src="require(`@/assets/video/synccSmallVideo.webm`)"-->
-<div v-else-if="this.$vuetify.breakpoint.sm">
-  <video-background
-  :src="require(`@/assets/video/synccSmallVideo.webm`)"
-  style="height:700px"
-  :muted="mute"
-  ref="videobackground"
-  >
-</video-background>
-</div>
-<!-- COLS -->
-<div v-else>
-  <video-background
-  :src="require(`@/assets/video/synccSmallVideo.webm`)"
-  style="height:400px"
-  :muted="mute"
-  ref="videobackground"
-  >
-</video-background>
-</div>
-</div>
-<!-- SECTION - 2 - Video -->
-<!-- SECTION - 3 - Paragraphs -->
-<!-- 1 -->
-<v-row class="pl-10 mt-12">
-  <v-col
-  v-if="this.$vuetify.breakpoint.md || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.xl"
-  class="px-2" cols="12">
-  <!-- Text -->
-  <p style="font-family:syncc-medium; font-size: 10pt; font-style: normal" > 01.</p>
-  <p class="mt-n4" style="font-size: 30pt; font-style: normal;">{{"A social platform with"}}</p>
-  <p class="mt-n8" style="font-size: 30pt; font-style: normal; color:#FA5257">{{"music in focus."}}</p>
-  <p  style="font-size: 15pt; font-style: normal">Discover music from real people and listen together in real</p>
-  <p class="mt-n5" style="font-size: 15pt; font-style: normal">time through your Spotify premium account</p>
-</v-col>
-<v-col
-v-else
-cols="12" sm="6">
-<!-- Text -->
-<p style="font-family:syncc-medium; font-size: 8pt; font-style: normal" > 01.</p>
-<p class="mt-n4" style="font-size: 20pt; font-style: normal;">{{"A social platform with"}}</p>
-<p class="mt-n6" style="font-size: 20pt; font-style: normal; color:#FA5257">{{"music in focus."}}</p>
-<p  style="font-size: 12pt; font-style: normal">Discover music from real people and listen together in real time through your Spotify premium account</p>
-</v-col>
+<div v-if="this.$vuetify.breakpoint.xl || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.md ">
+<video autoplay="autoplay" playsinline="" loop="loop" preload="auto" :muted="mute" style="width:100%;height:auto">
+  <source :src="require(`@/assets/video/synccSmallVideo.webm`)" type="video/webm">
+    <source :src="require(`@/assets/video/smallVideo.mp4`)" type="video/mp4">
+    </video>
+    </div>
+    <div v-else>
+    <video autoplay="autoplay" playsinline="" loop="loop" preload="auto" :muted="mute" style="width:100%;height:auto">
+      <source :src="require(`@/assets/video/synccLargeVideo.webm`)" type="video/webm">
+        <source :src="require(`@/assets/video/largeVideo.mp4`)" type="video/mp4">
+        </video>
+        </div>
+    <!-- SECTION - 2 - Video -->
+    <!-- SECTION - 3 - Paragraphs -->
+    <!-- 1 -->
+    <v-row class="px-10 mt-12">
+      <v-col
+      v-if="this.$vuetify.breakpoint.md || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.xl"
+      class="px-2" cols="12">
+      <!-- Text -->
+      <p style="font-family:syncc-medium; font-size: 10pt; font-style: normal" > 01.</p>
+      <p class="mt-n4" style="font-size: 30pt; font-style: normal;">{{"A social platform with"}}</p>
+      <p class="mt-n8" style="font-size: 30pt; font-style: normal; color:#FA5257">{{"music in focus."}}</p>
+      <p  style="font-size: 15pt; font-style: normal">Discover music from real people and listen together in real</p>
+      <p class="mt-n5" style="font-size: 15pt; font-style: normal">time through your Spotify premium account</p>
+    </v-col>
+    <v-col
+    v-else
+    cols="12" sm="12">
+    <!-- Text -->
+    <p style="font-family:syncc-medium; font-size: 8pt; font-style: normal" > 01.</p>
+    <p class="mt-n4" style="font-size: 20pt; font-style: normal;">{{"A social platform with"}}</p>
+    <p class="mt-n6" style="font-size: 20pt; font-style: normal; color:#FA5257">{{"music in focus."}}</p>
+    <p  style="font-size: 12pt; font-style: normal">Discover music from real people and listen together in real time through your Spotify premium account</p>
+  </v-col>
 </v-row>
 <!-- 2 mt-n1 -->
 <v-row class="px-10 mt-12">
@@ -386,14 +292,14 @@ cols="12" sm="12">
 </template>
 
 <script>
-import VideoBackground from 'vue-responsive-video-background-player'
+// import VideoBackground from 'vue-responsive-video-background-player'
 import MarqueeText from 'vue-marquee-text-component'
 // import { mdiApple, mdiAndroidDebugBridge } from '@mdi/js';
 
 export default {
   name: 'Syncc App',
   components: {
-    VideoBackground,
+    // VideoBackground,
     MarqueeText
   },
   data: () => ({
@@ -470,7 +376,7 @@ export default {
   font-family:syncc-regular, san-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  overflow:none !important
 }
 
 .row > .col-12 {

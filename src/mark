@@ -1,0 +1,97 @@
+<!-- XL   :src="require(`@/assets/video/synccLargeVideo.webm`)" -->
+<div v-if="this.$vuetify.breakpoint.xl">
+  <video-background
+  :src="require(`@/assets/video/largeVideo.mp4`)"
+  objectFit
+  style="height:1380px"
+  :muted="mute"
+  ref="videobackground"
+  >
+</video-background>
+</div>
+<!-- LG   :src="require(`@/assets/video/synccLargeVideo.webm`)" -->
+<div v-else-if="this.$vuetify.breakpoint.lg">
+<video-background
+:src="require(`@/assets/video/largeVideo.mp4`)"
+style="height:800px"
+:muted="mute"
+ref="videobackground"
+>
+</video-background>
+</div>
+<!-- MD   :src="require(`@/assets/video/synccLargeVideo.webm`)"-->
+<div v-else-if="this.$vuetify.breakpoint.md">
+<video-background
+:src="require(`@/assets/video/largeVideo.mp4`)"
+style="height:620px"
+:muted="mute"
+ref="videobackground"
+>
+</video-background>
+</div>
+<!-- SM   :src="require(`@/assets/video/synccSmallVideo.webm`)"-->
+<div v-else-if="this.$vuetify.breakpoint.sm">
+<video-background
+:src="require(`@/assets/video/smallVideo.mp4`)"
+style="height:700px"
+:muted="mute"
+ref="videobackground"
+>
+</video-background>
+</div>
+<!-- COLS -->
+<div v-else>
+<video :src="require(`@/assets/video/smallVideo.mp4`)" autoplay ></video>
+</video>
+
+<video-background
+:src="require(`@/assets/video/smallVideo.mp4`)"
+style="height:400px"
+objectFit
+:muted="mute"
+ref="videobackground"
+>
+</video-background>
+</div>
+=========================
+
+<!-- LG   :src="require(`@/assets/video/synccLargeVideo.webm`)" -->
+<div v-else-if="this.$vuetify.breakpoint.lg">
+  <video-background
+  :src="require(`@/assets/video/synccLargeVideo.webm`)"
+  style="height:800px"
+  :muted="mute"
+  ref="videobackground"
+  >
+</video-background>
+</div>
+<!-- MD   :src="require(`@/assets/video/synccLargeVideo.webm`)"-->
+<div v-else-if="this.$vuetify.breakpoint.md">
+  <video-background
+  :src="require(`@/assets/video/synccLargeVideo.webm`)"
+  style="height:620px"
+  :muted="mute"
+  ref="videobackground"
+  >
+</video-background>
+</div>
+<!-- SM   :src="require(`@/assets/video/synccSmallVideo.webm`)"-->
+<div v-else-if="this.$vuetify.breakpoint.sm">
+  <video-background
+  :src="require(`@/assets/video/synccSmallVideo.webm`)"
+  style="height:700px"
+  :muted="mute"
+  ref="videobackground"
+  >
+</video-background>
+</div>
+<!-- COLS -->
+<div v-else>
+  <video-background
+  :src="require(`@/assets/video/synccSmallVideo.webm`)"
+  style="height:400px"
+  :muted="mute"
+  ref="videobackground"
+  >
+</video-background>
+</div>
