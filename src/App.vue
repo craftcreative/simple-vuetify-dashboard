@@ -169,16 +169,17 @@
 <!-- SECTION - 1 - Download -->
 <!-- SECTION - 2 - Video -->
 <div v-if="this.$vuetify.breakpoint.xl || this.$vuetify.breakpoint.lg || this.$vuetify.breakpoint.md ">
-<video autoplay="autoplay" playsinline="" loop="loop" preload="auto" :muted="mute" style="width:100%;height:auto">
-  <source :src="require(`@/assets/video/synccSmallVideo.webm`)" type="video/webm">
-    <source :src="require(`@/assets/video/smallVideo.mp4`)" type="video/mp4">
-    </video>
+  <video autoplay="autoplay" playsinline="" loop="loop" preload="auto" :muted="mute" style="width:100%;height:auto">
+    <source :src="require(`@/assets/video/synccLargeVideo.webm`)" type="video/webm">
+      <source :src="require(`@/assets/video/largeVideo.mp4`)" type="video/mp4">
+      </video>
     </div>
     <div v-else>
-    <video autoplay="autoplay" playsinline="" loop="loop" preload="auto" :muted="mute" style="width:100%;height:auto">
-      <source :src="require(`@/assets/video/synccLargeVideo.webm`)" type="video/webm">
-        <source :src="require(`@/assets/video/largeVideo.mp4`)" type="video/mp4">
-        </video>
+      <video autoplay="autoplay" playsinline="" loop="loop" preload="auto" :muted="mute" style="width:100%;height:auto">
+        <source :src="require(`@/assets/video/synccSmallVideo.webm`)" type="video/webm">
+          <source :src="require(`@/assets/video/smallVideo.mp4`)" type="video/mp4">
+          </video>
+
         </div>
     <!-- SECTION - 2 - Video -->
     <!-- SECTION - 3 - Paragraphs -->
@@ -292,14 +293,14 @@ cols="12" sm="12">
 </template>
 
 <script>
-// import VideoBackground from 'vue-responsive-video-background-player'
 import MarqueeText from 'vue-marquee-text-component'
-// import { mdiApple, mdiAndroidDebugBridge } from '@mdi/js';
 
 export default {
   name: 'Syncc App',
+  metaInfo: {
+      title: 'Syncc App',
+    },
   components: {
-    // VideoBackground,
     MarqueeText
   },
   data: () => ({
@@ -319,9 +320,6 @@ export default {
     },
     goToAndroidStore(){
       window.open('https://play.google.com/store/apps/details?id=app.syncc.mobile.android',"_blank");
-    },
-    playVideo(){
-      this.$refs.videobackground.player.play();
     },
     muteVideo(){
       this.mute = !this.mute
@@ -346,9 +344,6 @@ export default {
       }
       this.os = os
     }
-  },
-  mounted(){
-    this.playVideo()
   },
   created(){
     this.getOS()
