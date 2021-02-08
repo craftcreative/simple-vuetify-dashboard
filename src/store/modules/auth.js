@@ -2,7 +2,7 @@
 const defaultState = {
   status: "",
   token: localStorage.getItem("token") || "",
-  user: {}
+  // user: {}
 };
 
 //GETTERS
@@ -30,8 +30,8 @@ const mutations = {
 
 //ACTIONS
 const actions = {
-  login({commit}, user) {
-    return new Promise((resolve, reject) => {
+  login({commit}) {
+    return new Promise((resolve) => {
       commit("auth_request");
       // AXIOS CALL
       const token = "testToken123"
@@ -41,7 +41,7 @@ const actions = {
     });
   },
   logout({commit}){
-    return new Promise((resolve,reject) => {
+    return new Promise((resolve) => {
       commit("logout");
       localStorage.removeItem("token")
       // AXIOS

@@ -1,4 +1,4 @@
-# syncc-dashboard
+# syncc-web
 
 ## Project setup
 ```

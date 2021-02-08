@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000122348485 0.124252033 8.78719053 0.124252033 8.78719053 15.969697 0.000122348485 15.969697"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-9" transform="translate(-949.000000, -42.000000)">
+            <g id="Group-2" transform="translate(949.000000, 42.000000)">
+                <g id="Group-8">
+                    <g id="Group">
+                        <g id="Group-6">
+                            <g id="Group-3">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M8.75456427,0.12405728 L1.73787866,5.5416796 L0.655910227,5.5416796 C0.293758712,5.5416796 0.000122348485,5.82212306 0.000122348485,6.16800333 L0.000122348485,9.92594568 C0.000122348485,10.2718259 0.293758712,10.5518799 0.655910227,10.5518799 L1.73787866,10.5518799 L8.78719053,15.9698917 L8.75456427,0.12405728 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-5" transform="translate(12.000000, 3.000000)" stroke="#FFFFFF" stroke-linecap="round">
+                    <path d="M1,0 C2.63446043,1.10427724 3.70902021,2.97425965 3.70902021,5.09514023 C3.70902021,7.0987773 2.75007762,8.87827668 1.26612653,10" id="Stroke-1"></path>
+                    <path d="M0.0516900356,3 C0.615797108,3.47391323 0.974286845,4.18447541 0.974286845,4.97881412 C0.974286845,5.0762289 0.9688942,5.17238428 0.958391253,5.26699821 C0.880663675,5.96719323 0.523054364,6.58296598 0,7" id="Stroke-3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
