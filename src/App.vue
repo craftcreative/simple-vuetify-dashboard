@@ -109,8 +109,8 @@ style="padding-left:13px; padding-right:23px;"
 <div style="vertical-align: top;">
   <v-img
   class="float-left mr-12"
-  height="16"
-  width="16"
+  height="22.4"
+  width="22.4"
 
   @click="goToInstagram()"
   src="@/assets/image/instagramIcon.svg"
@@ -120,8 +120,8 @@ style="padding-left:13px; padding-right:23px;"
   class="mr-5"
   align="right"
   @click="muteVideo()"
-  height="16"
-  width="19"
+  height="22.4"
+  width="26.6"
   src="@/assets/image/muteIconTrue.svg"
   ></v-img>
   <v-img
@@ -129,8 +129,8 @@ style="padding-left:13px; padding-right:23px;"
   align="right"
   class="mr-5"
   @click="muteVideo()"
-  height="16"
-  width="19"
+  height="22.4"
+  width="26.6"
   src="@/assets/image/muteIcon.svg"
   ></v-img>
 </div>
@@ -407,9 +407,9 @@ cols="12" sm="12">
 import MarqueeText from 'vue-marquee-text-component'
 
 export default {
-  name: 'Syncc App',
+  name: 'syncc-app',
   metaInfo: {
-    title: 'Syncc App',
+    title: 'Syncc with music. Download the app.',
   },
   components: {
     MarqueeText
@@ -454,10 +454,14 @@ export default {
         os = 'Linux';
       }
       this.os = os
+    },
+    createCoolLog(){
+      console.log('  ██████ ▓██   ██▓ ███▄    █  ▄████▄   ▄████▄        ▄▄▄       ██▓███   ██▓███\n▒██    ▒  ▒██  ██▒ ██ ▀█   █ ▒██▀ ▀█  ▒██▀ ▀█       ▒████▄    ▓██░  ██▒▓██░  ██▒\n░ ▓██▄     ▒██ ██░▓██  ▀█ ██▒▒▓█    ▄ ▒▓█    ▄      ▒██  ▀█▄  ▓██░ ██▓▒▓██░ ██▓▒\n  ▒   ██▒  ░ ▐██▓░▓██▒  ▐▌██▒▒▓▓▄ ▄██▒▒▓▓▄ ▄██▒     ░██▄▄▄▄██ ▒██▄█▓▒ ▒▒██▄█▓▒ ▒\n▒██████▒▒  ░ ██▒▓░▒██░   ▓██░▒ ▓███▀ ░▒ ▓███▀ ░ ██▓  ▓█   ▓██▒▒██▒ ░  ░▒██▒ ░  ░\n▒ ▒▓▒ ▒ ░   ██▒▒▒ ░ ▒░   ▒ ▒ ░ ░▒ ▒  ░░ ░▒ ▒  ░ ▒▓▒  ▒▒   ▓▒█░▒▓▒░ ░  ░▒▓▒░ ░  ░\n░ ░▒  ░ ░ ▓██ ░▒░ ░ ░░   ░ ▒░  ░  ▒     ░  ▒    ░▒    ▒   ▒▒ ░░▒ ░     ░▒ ░\n░  ░  ░   ▒ ▒ ░░     ░   ░ ░ ░        ░         ░     ░   ▒   ░░       ░░\n      ░   ░ ░              ░ ░ ░      ░ ░        ░        ░  ░\n          ░ ░                ░        ░          ░');
     }
   },
   created(){
     this.getOS()
+    this.createCoolLog()
   }
 };
 </script>
