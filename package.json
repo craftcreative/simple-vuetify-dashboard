@@ -8,9 +8,14 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "chart.js": "^2.9.4",
+    "chartjs-adapter-moment": "^0.1.2",
     "core-js": "^3.6.5",
+    "moment": "^2.29.1",
     "vue": "^2.6.11",
+    "vue-chartjs": "^3.5.1",
     "vue-marquee-text-component": "^1.2.0",
+    "vue-moment": "^4.1.0",
     "vue-responsive-video-background-player": "^1.2.2",
     "vue-router": "^3.2.0",
     "vuetify": "^2.2.11",
