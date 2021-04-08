@@ -327,7 +327,7 @@ large><span class="text-left pl-4">Download on Android</span>
     <p class="mt-n4" style="font-size: 30pt; font-style: normal;">Discover music from people.</p>
     <p class="mt-n8" style="font-size: 30pt; font-style: normal; color:#FA5257">Not algorithms.</p>
     <p  style="font-size: 15pt; font-style: normal">Inspire others with your flawless music taste and discover new</p>
-    <p class="mt-n5" style="font-size: 13pt; font-style: normal">music from friends, music influencers and artists.</p>
+    <p class="mt-n5" style="font-size: 15pt; font-style: normal">music from friends, music influencers and artists.</p>
   </v-col>
   <v-col
   v-else-if="this.$vuetify.breakpoint.sm"

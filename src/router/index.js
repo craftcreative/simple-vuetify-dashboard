@@ -9,8 +9,6 @@ import PrivacyPolicy from '../views/PrivacyPolicyView.vue'
 import TearmsOfService from '../views/TermsOfServiceView.vue'
 import Faq from '../views/FaqView.vue'
 
-
-
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -18,13 +16,13 @@ const router = new VueRouter({
   routes: [
     { path: "/", name: "home", component: Home, meta: { requiresAuth: false } },
     {
-      path: "privacy-policy",
+      path: "/legal/privacy-policy",
       name: "legal-privacy-policy",
       component:PrivacyPolicy,
       meta: { requiresAuth: false }
     },
     {
-      path: "/terms-of-service",
+      path: "/legal/terms-of-service",
       name: "legal-terms-of-service",
       component:TearmsOfService,
       meta: { requiresAuth: false }
@@ -50,7 +48,7 @@ router.beforeEach((to, from, next) => {
       next();
       return;
     }
-    next("/login")
+    next("/admin")
   } else {
     next();
   }

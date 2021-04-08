@@ -1,5 +1,5 @@
 <template lang="html" >
-  <v-app light
+  <v-app dark
   style="background-color:#110F1B; color:white" >
   <v-main color="primary" class="lighten-3">
   <router-view :key="$route.path"/>

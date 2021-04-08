@@ -89,7 +89,7 @@ src="@/assets/image/instagramIcon.svg"
 
 <h3 class="mb-2">Introduction</h3>
 
-<p class="pp">These terms of use (the “Terms”), together with the <a style="color:#FA5257" href="/privacy-policy">Privacy Policy</a> apply to the access and use of the music software application SYNCC and all Service, software, products, features, materials and data accessed via the software application, which is provided by Muzyncc AB (publ) (collectively the “Syncc Service”).</p>
+<p class="pp">These terms of use (the “Terms”), together with the <a style="color:#FA5257" href="/legal/privacy-policy">Privacy Policy</a> apply to the access and use of the music software application SYNCC and all Service, software, products, features, materials and data accessed via the software application, which is provided by Muzyncc AB (publ) (collectively the “Syncc Service”).</p>
 <p class="pp">Muzyncc AB (publ) is a public limited company incorporated under the laws of Sweden, having its principle place of business at Grevgatan 40, 11453, Stockholm registered at the Swedish Companies Registration Office with number 559224-7091 (hereinafter “SYNCC”, “We”, “Us” and/or “Our”).
 </p>
 
@@ -115,7 +115,7 @@ src="@/assets/image/instagramIcon.svg"
 Registration of an account in violation of what is stated under this section entitles SYNCC to, at its sole discretion, suspend or terminate the user account and/or Your access to it, in accordance with below section “Termination”.</p>
 
 <h3 class="mb-2">Privacy Policy</h3>
-<p class="pp">In order to provide You with the SYNCC Service, We may need to collect and process certain personal information about You. We process all personal data in accordance with <a href="/legal/privacy-policy">SYNCC’s Privacy Policy</a> available on our website and in our application.
+<p class="pp">In order to provide You with the SYNCC Service, We may need to collect and process certain personal information about You. We process all personal data in accordance with <a style="color:#FA5257" href="/legal/privacy-policy">Privacy Policy</a> available on our website and in our application.
 </p>
 
 <h3 class="mb-2">Changes to the SYNCC Service</h3>
